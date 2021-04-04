@@ -151,7 +151,9 @@
                     text: this.text,
                 }).then((response) => {
                     this.text = '';
+                    console.log('sended');
                 });
+                
             },
             sendFiles() {
                 var data = new FormData();
@@ -171,6 +173,7 @@
                         console.log(users)
                     })
                     .listen('\\PhpJunior\\LaravelVideoChat\\Events\\NewConversationMessage', (data) => {
+                        console.log('qweqweweqeqwe');
                         var self = this;
                         if ( data.files.length > 0 ){
                             $.each( data.files , function( key, value ) {
@@ -180,6 +183,7 @@
                         this.messages.push(data);
                     })
                     .listen('\\PhpJunior\\LaravelVideoChat\\Events\\VideoChatStart', (data) => {
+                        console.log('123123123');
 
                         if(data.to != this.currentUser.id){
                             return;

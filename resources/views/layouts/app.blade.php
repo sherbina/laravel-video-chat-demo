@@ -77,6 +77,6 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 
-    <script src="//{{ Request::getHost() }}:6001/socket.io/socket.io.js"></script>
+    <script src="//10.20.1.12:6001/socket.io/socket.io.js"></script>
 </body>
 </html>

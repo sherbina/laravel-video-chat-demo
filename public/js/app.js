@@ -3440,7 +3440,7 @@ SDPUtils.writeSessionBoilerplate = function(sessId, sessVer) {
   }
   // FIXME: sess-id should be an NTP timestamp.
   return 'v=0\r\n' +
-      'o=thisisadapterortc ' + sessionId + ' ' + version + ' IN IP4 127.0.0.1\r\n' +
+      'o=thisisadapterortc ' + sessionId + ' ' + version + ' IN IP4 10.20.1.12\r\n' +
       's=-\r\n' +
       't=0 0\r\n';
 };
